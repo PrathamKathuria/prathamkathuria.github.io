@@ -82,20 +82,25 @@
             background-size: 498px 438px !important;
         }
 
-        h1 {
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            font-size: 2.5em;
-            color: #FF1493;
-            animation: bounce 1s infinite alternate;
-        }
+	h1 {
+    	font-family: 'Comic Sans MS', cursive, sans-serif;
+    	font-size: 2.5em;
+    	color: #FF1493;
+	
+    	animation: heartbeat 0.588s infinite;
+    	transform-origin: center;
+	}
 
-        @keyframes bounce {
-            from {
-                transform: translateY(0);
-            }
-            to {
-                transform: translateY(-10px);
-            }
+	@keyframes heartbeat {
+    	0%   { transform: scale(1); }
+    	12%  { transform: scale(1.15); } /* lub */
+    	22%  { transform: scale(1); }
+
+    	38%  { transform: scale(1.08); } /* dub */
+    	48%  { transform: scale(1); }
+
+    	100% { transform: scale(1); }    /* pause */
+	}
         }
 	p{
 	font-family: 'Pacifico', cursive;
@@ -104,7 +109,7 @@ font-size:1.25em;}
 </head>
 
 <body>
-    <h1>Wanna See Pratham's Crush? 💖</h1>
+    <h1>Wanna See Pratham's Crush? 🩷</h1>
     <div id="questions">
         <div class="question active">
             <p>✨ Do you believe in love at first sight? ✨</p>
