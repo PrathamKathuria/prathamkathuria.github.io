@@ -81,19 +81,17 @@
             background: url('https://i.ibb.co/TqTRbFZK/love-languages.gif')repeat right center fixed!important;
             background-size: 498px 438px !important;
         }
-h2 {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    font-size: 2.5em;
-    color: #FF1493;
-}
 h1 {
     font-family: 'Comic Sans MS', cursive, sans-serif;
     font-size: 2.5em;
     color: #FF1493;
-
+    margin: 0;
+}
+.heart {
     display: inline-block;
     transform-origin: center center;
-    animation: heartbeat 2s infinite;
+    animation: heartbeat 1.5s infinite;
+    will-change: transform;
 }
 
 @keyframes heartbeat {
@@ -118,7 +116,7 @@ font-size:1.25em;}
 </head>
 
 <body>
-    <h2>Wanna See Pratham's Crush?</h2> <h1>🩷</h1>
+	<h1>Wanna See Pratham's Crush? <span class="heart">🩷</span></h1>
     <div id="questions">
         <div class="question active">
             <p>✨ Do you believe in love at first sight? ✨</p>
